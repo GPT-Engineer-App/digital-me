@@ -11,7 +11,17 @@ const colors = {
   },
 };
 
-const theme = extendTheme({ colors });
+const theme = extendTheme({
+  fonts: {
+    heading: "Arial, sans-serif",
+    body: "Arial, sans-serif",
+  },
+  fontSizes: {
+    xl: "1.25rem",
+    "2xl": "1.5rem",
+  },
+  colors
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
