@@ -1,5 +1,5 @@
 import { Box, Flex, Text, VStack, Link, Container, Heading } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Index = () => {
   return (
@@ -33,6 +33,17 @@ const Index = () => {
           </VStack>
         </Box>
       </VStack>
+      <Box as="footer" bg="brand.900" w="100%" p={4} color="white" mt={10}>
+        <Flex justifyContent="space-between" alignItems="center">
+          <Text fontSize="sm">© 2023 John Doe. All rights reserved.</Text>
+          <Flex>
+            <Link href="/privacy-policy" p={2}>Privacy Policy</Link>
+            <Link href="https://facebook.com" isExternal p={2}><FaFacebookF /></Link>
+            <Link href="https://twitter.com" isExternal p={2}><FaTwitter /></Link>
+            <Link href="https://instagram.com" isExternal p={2}><FaInstagram /></Link>
+          </Flex>
+        </Flex>
+      </Box>
     </Container>
   );
 };
